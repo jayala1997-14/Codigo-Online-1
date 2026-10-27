@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    <header>Formulario de Registro</header>
+    <main>
+        <section>
+            <!-- Aquí crearemos nuestro formulario -->
+            <!-- Un formulario de registro de alguien -->
+             <form action="">
+                <!-- Aquí vamos a colocr nuestros inputs -->
+                 <p>
+                    Por favor llene la información solicitada
+                 </p>
+                 <label for="nombres">
+                    Nombres
+                 </label>
+                 <input 
+                    type="text" 
+                    placeholder="Ej. Jean"
+                    id="nombres"
+                    name="nombres"
+                    required
+                    minlength="3"
+                    maxlength="10"
+                    pattern="[A-Z a-z]+"
+                >
+                <br>
+                <label for="apellidos">
+                    Apellidos
+                </label>
+                <input 
+                    type="text"
+                    placeholder="Ej. Ayala"
+                    id="apellidos"
+                    required
+                    pattern="[A-Z a-z]{1,20}"
+                >
+                <br>
+                <label for="email">Email</label>
+                <input 
+                    type="email" 
+                    placeholder="Ingresa correo"
+                    name="email" 
+                    id="email"
+                    required
+                    pattern="[A-Z a-z 0-9]{1,}@[A-Z a-z 0-9]{1,}.[A-Z a-z]{2,}"
+                >
+                <br>
+                <label for="">Nueva contraseña</label>
+                <input 
+                    type="password"
+                    placeholder="Ingresa tu contraseña"
+                    required
+                >
+                <br>
+                <label for="">Edad</label>
+                <input 
+                    type="number"
+                    placeholder="Ingresa tu edad"
+                    min="0"
+                    max="130"
+                >
+                <br>
+                <label for="">Género</label>
+                <br>
+                <input type="radio" name="genero" value="M">Masculino
+                <input type="radio" name="genero" value="F">Femenino
+                <input type="radio" name="genero" value="NC">Prefiero no compartir
+                <br>
+                <label for="">Hobbies</label>
+                <br>
+                <input type="checkbox" value="autos">Automotriz
+                <br>
+                <input type="checkbox" value="dibujar">dibujar
+                <br>
+                <input type="checkbox" value="viajar">viajar
+                <br>
+                <input type="checkbox" value="cantar">Cantar
+                <br>
+                <input type="checkbox" value="videojuegos">Jugar Videojuegos
+                <br>
+                <br>
+                <label for="">Ciudad</label>
+                <!-- select>option[value=""]*5 -->
+                <select name="" id="">
+                    <option value="" selected disabled>Elija una ciudad....</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="LI">Lima</option>
+                    <option value="AR">Arequipa</option>
+                    <option value="LB">Lambayeque</option>
+                    <option value="CA">Callao</option>
+                    <option value="PI">Piura</option>
+                    <option value="TB">Tumbes</option>
+                    <option value="TA">Tarapoto</option>
+                    <option value="TR">Trujillo</option>
+                    <option value="TA">Tarma</option>
+                </select>
+                <br>
+                <label for="">Biografía</label>
+                <br>
+                <textarea name="" id=""></textarea>
+                <hr>
+                <input type="submit" value="Enviar">
+             </form>
+        </section>
+    </main>
+</body>
+</html>
+
+<!-- LIBROS O LINKS (ELEMENTOS DE  ESTUDIO)-->
+<!-- Info general y ejemplos -->
+<!-- https://regexr.com/ -->
+<!-- La versión facil -->
+<!-- http://html5pattern.com/ -->
+<!-- La versión detallada -->
+<!-- https://www.regular-expressions.info/ -->
