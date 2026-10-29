@@ -1,0 +1,9 @@
+/* etiqueta, .clase, #id */
+article, h1{
+     background-color: steelblue;
+}
+
+/* todos los hijos que tengan el section a CUALQUIER NIVEL */
+section article{
+    color: lightgray;
+}
