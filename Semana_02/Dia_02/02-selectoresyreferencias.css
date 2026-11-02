@@ -7,3 +7,89 @@ article, h1{
 section article{
     color: lightgray;
 }
+
+ol > li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+}
+
+ol > ul > li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;    
+}
+
+.seccion1 > h2 {
+    color: aqua;
+}
+
+#caja > span{
+    background-color: yellow;
+}
+
+h2{
+    color: tomato !important;
+    /* Solo usar !important en caso de mucha necesidad */
+}
+
+h2.adicional{
+    background-color: blueviolet;
+}
+
+.adicional{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p[name="instrucciones"]{
+    font-style: italic;
+    color: green;
+}
+
+input[placeholder]{
+    background-color: yellowgreen;
+}
+
+input:placeholder-shown{
+    color: blue;
+}
+
+/* PSEUDOCLASES */
+
+p:nth-child(3){
+    font-style: italic;
+    font-weight: bold;
+    color: peru;
+    background-color: aqua;
+}
+
+p:last-child{
+    border: 2px solid red;
+}
+
+/* Impares */
+tr:nth-child(odd){
+    background-color: yellow;
+}
+
+/* par */
+tr:nth-child(even){
+    background-color: tomato;
+}
+
+table, th, td{
+    border: 1px solid black;
+    /* retirar espacios entre celdas */
+    border-collapse: collapse;
+
+    /* centrar horizontal */
+    margin: 0 auto;
+}
+
+#principal::first-letter, #secundario::first-letter{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+li::before{
+    color: purple;
+    content: "-";
+}
