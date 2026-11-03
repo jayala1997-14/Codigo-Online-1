@@ -1,0 +1,39 @@
+/* "*" sirve para todos los elementos */
+*{
+    border: 1px solid red;
+}
+
+header{
+    height: 500px;
+    width: 400px;
+    font-size: 24px;
+}
+
+section{
+    height: 500px;
+    width: 400px;
+    border: 1px solid green;
+    font-size: 20px;
+}
+
+/* em coge el tamaño más cercano del padre*/
+p{
+    border: 2px solid blue;
+    width: 50%;
+    font-size: 0.5em;
+}
+
+/* rem escoge el tamaño más lejano del padre*/
+label{
+    font-size: 1rem;
+}
+
+div{
+    border: 4px solid purple;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1{
+    font-size: 5vw;
+}
