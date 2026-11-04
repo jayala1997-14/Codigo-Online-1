@@ -19,17 +19,58 @@
         .menu{
             width: 100%;
             height: 500px;
+            background-color: lightblue;
+
+            display: flex;
+            /* flex-direction me indica la dirección de mis elementos hijos */
+            flex-direction: row-reverse;
+            justify-content: center;
+            /* space-around */
+            /* space evenly */
+            /* center */
+
+            /* align-items me permite alinear de forma vertical*/
+            align-items: center;
+            /* indicar si el tamaño que indiqué a mis elementos hijos se va a mantener si reduzco al padre*/
+            flex-wrap: nowrap;
         }
+        .link{
+            background-color: salmon;
+            height: 75px;
+            width: 100px;
+            padding: 10px;
+        }
+        .link3{
+            flex-grow: 3;
+        }
+        /* cuanto se puede encoger un elemento */
+        .link1{
+            flex-shrink: 2;
+            /* align-self se usa para que se alinee de forma independiente */
+            align-self: flex-end;
+        }
+
+        .link6{
+            align-self: flex-start;
+        }
+
     </style>
 </head>
 <body>
     <nav class="menu">
-        <div class="link">link1</div>
+        <div class="link link1">link1</div>
         <div class="link">link2</div>
-        <div class="link">link3</div>
+        <div class="link link3">link3</div>
         <div class="link">link4</div>
         <div class="link">link5</div>
-        <div class="link">link6</div>
+        <div class="link link6">link6</div>
     </nav>
 </body>
 </html>
+
+
+<!-- LINKS DE ESTUDIO -->
+ <!-- 
+    https://css-tricks.com/snippets/css/a-quide-to-flexbox/
+    https://flexboxfroggy.com/#es
+ -->
